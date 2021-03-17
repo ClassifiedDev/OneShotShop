@@ -1,0 +1,6 @@
+me\classified\shop\listeners\InventoryClickListener.class
+me\classified\shop\utils\ShopInventories.class
+me\classified\shop\commands\ShopCommand.class
+me\classified\shop\utils\ItemNames.class
+me\classified\shop\utils\Utils.class
+me\classified\shop\OneShotShop.class

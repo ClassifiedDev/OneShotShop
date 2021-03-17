@@ -1,0 +1,6 @@
+main: me.classified.shop.OneShotShop
+version: v1.0.0-beta
+name: OneShotShop
+author: ClassifiedDev
+commands:
+  shop: 
