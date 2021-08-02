@@ -14,6 +14,10 @@
 
     <repositories>
         <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
@@ -21,9 +25,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.oneshot.server</groupId>
-            <artifactId>OneShotServer</artifactId>
-            <version>1.8.8-1</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

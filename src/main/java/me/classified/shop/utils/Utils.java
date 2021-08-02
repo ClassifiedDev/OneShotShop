@@ -70,10 +70,10 @@ public class Utils {
 
 	public static ItemStack createShopItem(Material item, Short data, String name, Double buy, Double sell){
 		ArrayList<String> itemLore = new ArrayList<String>();
-		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x","&7&m----------------------"};
-		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 64x","&7&m----------------------"};
-		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x","&7&m----------------------"};
-		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 1x","&7&m----------------------"};
+		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x","&7&m----------------------"};
+		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 64x","&7&m----------------------"};
+		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x","&7&m----------------------"};
+		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 1x","&7&m----------------------"};
 		ItemStack is = new ItemStack(item, 1, (short) data);
 		ItemMeta im = is.getItemMeta();
 		im.setDisplayName(color(name));
@@ -111,12 +111,12 @@ public class Utils {
 		return is;
 	}
 
-	public static ItemStack createShopItem(Material item, Short data, String name, Integer buy, Double sell){
+	public static ItemStack createShopItem(Material item, Short data, String name, Integer buy, Double sell) {
 		ArrayList<String> itemLore = new ArrayList<String>();
-		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x","&7&m----------------------"};
-		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 64x","&7&m----------------------"};
-		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x","&7&m----------------------"};
-		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 1x","&7&m----------------------"};
+		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x","&7&m----------------------"};
+		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 64x","&7&m----------------------"};
+		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x","&7&m----------------------"};
+		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 1x","&7&m----------------------"};
 		ItemStack is = new ItemStack(item, 1, (short) data);
 		ItemMeta im = is.getItemMeta();
 		im.setDisplayName(color(name));
@@ -156,10 +156,23 @@ public class Utils {
 
 	public static ItemStack createShopItem(Material item, Short data, String name, Integer buy, Integer sell){
 		ArrayList<String> itemLore = new ArrayList<String>();
-		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x","&7&m----------------------"};
-		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 64x","&7&m----------------------"};
-		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x","&7&m----------------------"};
-		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 1x","&7&m----------------------"};
+		String[] buyonlylore;
+		String[] buyselllore;
+		String[] buyonlylorens;
+		String[] buyselllorens;
+		if (item == Material.ENDER_PEARL) {
+			buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 16x","&7&m----------------------"};
+			buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 16x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 16x","&7&m----------------------"};
+			buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x","&7&m----------------------"};
+			buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 1x","&7&m----------------------"};
+
+		} else {
+			buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x","&7&m----------------------"};
+			buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 64x","&7&m----------------------"};
+			buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x","&7&m----------------------"};
+			buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 1x","&7&m----------------------"};
+
+		}
 		ItemStack is = new ItemStack(item, 1, (short) data);
 		ItemMeta im = is.getItemMeta();
 		im.setDisplayName(color(name));
@@ -199,10 +212,10 @@ public class Utils {
 
 	public static ItemStack createShopItem(Material item, Short data, String name, Double buy, Integer sell){
 		ArrayList<String> itemLore = new ArrayList<String>();
-		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x","&7&m----------------------"};
-		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x","&dShift Left-Click &7to buy 64x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 64x","&7&m----------------------"};
-		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x","&7&m----------------------"};
-		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&dLeft Click &7to buy 1x", "&dShift Left-Click &7to buy 1x"," ","&dRight-Click &7to sell 1x","&dShift Right-Click &7to sell 1x","&7&m----------------------"};
+		String[] buyonlylore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x","&7&m----------------------"};
+		String[] buyselllore = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x","&bShift Left-Click &7to buy 64x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 64x","&7&m----------------------"};
+		String[] buyonlylorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x","&7&m----------------------"};
+		String[] buyselllorens = new String[]{" ", "&a&lBUY PRICE: &7$" + buy + "/ea", " ", "&c&lSELL PRICE: &7$" + sell + "/ea", " ", "&7&m----------------------", "&bLeft Click &7to buy 1x", "&bShift Left-Click &7to buy 1x"," ","&bRight-Click &7to sell 1x","&bShift Right-Click &7to sell 1x","&7&m----------------------"};
 		ItemStack is = new ItemStack(item, 1, (short) data);
 		ItemMeta im = is.getItemMeta();
 		im.setDisplayName(color(name));

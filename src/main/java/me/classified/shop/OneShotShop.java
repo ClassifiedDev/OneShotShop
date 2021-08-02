@@ -25,13 +25,13 @@ public class OneShotShop extends JavaPlugin{
 			getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
-		logger.info(pdfFile.getName() + " has been ENABLED v" + pdfFile.getVersion());
+		logger.info(pdfFile.getName() + " has been ENABLED " + pdfFile.getVersion());
 	}
 
 	public void onDisable(){
 		PluginDescriptionFile pdfFile = getDescription();
 		Logger logger = getLogger();
-		logger.info(pdfFile.getName() + " has been DISABLED v" + pdfFile.getVersion());
+		logger.info(pdfFile.getName() + " has been DISABLED " + pdfFile.getVersion());
 	}
 
 	private boolean setupEconomy(){
